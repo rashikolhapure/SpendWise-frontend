@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+body, html{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.1em;
+}
+
+.app-primary-color {
+    color: #b6117c;
+}
+
+nav, .app-primary-bg-color {
+    background-color: #b6117c !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.border-bottom-1 {
+    border-bottom: 1px solid lightgray;
+}
+
+.card-subtitle {
+    margin-top: 1rem;
+}
+
+.navbar-nav .nav-link, .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.login-background {
+    background-image: url('../src/assets/login-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
