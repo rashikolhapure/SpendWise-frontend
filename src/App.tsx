@@ -7,7 +7,6 @@ import NewExpense from "./pages/expense/NewExpense";
 import ExpenseDetails from "./pages/expense/ExpenseDetails";
 import ExpenseReports from "./pages/expense/ExpenseReports";
 
-
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,6 +17,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/new" element={<NewExpense />} />
         <Route path="/view/:expenseId" element={<ExpenseDetails />} />
+        <Route path="/edit/:expenseId" element={<NewExpense />} />
         <Route path="/reports" element={<ExpenseReports />} />
       </Routes>
     </BrowserRouter>

@@ -9,7 +9,7 @@ const Navbar = () => {
         <Logo />
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav">
-          <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="/">
               Dashboard
             </NavLink>
             <NavLink className="nav-link" to="/new">
@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="d-flex" role="search">
-        <NavLink className="btn btn-sm btn-outline-light" to="/login">
+          <NavLink className="btn btn-sm btn-outline-light" to="/login">
             Login
           </NavLink>
           <NavLink className="btn btn-sm btn-outline-light mx-1" to="/register">

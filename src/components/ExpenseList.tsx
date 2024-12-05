@@ -30,11 +30,11 @@ const ExpenseList = ({ expenses }: Props) => {
               </div>
               <div className="card-subtitle">
                 <span className="badge rounded-pill app-primary-bg-color">
-                {CurrencyUtils.formatToINR(expense.amount)}
+                  {CurrencyUtils.formatToINR(expense.amount)}
                 </span>
               </div>
             </div>
-            </Link>
+          </Link>
         ))}
       </div>
     </div>

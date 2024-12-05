@@ -42,13 +42,18 @@ const ExpenseDetails = () => {
       {isLoading && <p>Loading...</p>}
       {errors && <p className="text-danger">{errors}</p>}
       <div className="d-flex flex-row-reverse mb-2">
-      <button
+        <button
           className="btn btn-sm btn-danger"
           onClick={() => setShowDialog(true)}
         >
           Delete
         </button>
-        <button className="btn btn-sm btn-warning mx-2">Edit</button>
+        <button
+          className="btn btn-sm btn-warning mx-2"
+          onClick={() => navigate(`/edit/${expenseId}`)}
+        >
+          Edit
+        </button>
         <Link className="btn btn-sm btn-secondary" to="/">
           Back
         </Link>
@@ -94,6 +99,6 @@ const ExpenseDetails = () => {
       />
     </div>
   );
-  };
-  
-  export default ExpenseDetails;
+};
+
+export default ExpenseDetails;
